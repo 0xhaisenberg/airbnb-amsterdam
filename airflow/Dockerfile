@@ -7,6 +7,7 @@ ENV AIRFLOW_HOME=/opt/airflow
 USER root
 RUN apt-get update -qq && apt-get install vim -qqq
 # git gcc g++ -qqq
+RUN apt-get update && apt-get install wget 
 
 USER $AIRFLOW_UID
 
