@@ -34,12 +34,14 @@ parquet_file = dataset_file.replace('csv.gz', 'parquet')
 
 def format_to_parquet(src_file):
     df = pd.read_csv(src_file)
-    return df.to_parquet(f'{parquet_file}', compression='gzip')
+    df.to_parquet(f'{parquet_file}', compression='gzip')
+
+    return f"{parquet_file}"
 
 
 
 
-def upload_to_gcs(bucket, object_name, local_file):
+def upload_to_gcs(bucket, object_name, ti):
     """
     Ref: https://cloud.google.com/storage/docs/uploading-objects#storage-upload-object-python
     :param bucket: GCS bucket name
@@ -47,6 +49,7 @@ def upload_to_gcs(bucket, object_name, local_file):
     :param local_file: source path & file-name
     :return:
     """
+    local_file = ti.xcom_pull(task_ids="format_to_parquet_task")
 
     client = storage.Client()
     bucket = client.bucket(bucket)
@@ -91,8 +94,8 @@ with DAG(
         python_callable=upload_to_gcs,
         op_kwargs={
             "bucket": BUCKET,
-            "object_name": f"airbnb_amsterdam/data/{parquet_file}",
-            "local_file": f"{path_to_file}/{parquet_file}",
+            "object_name": f"airbnb_amsterdam/{parquet_file}",
+           # "local_file": f"{path_to_file}/{parquet_file}",
         },
     )
 
@@ -111,9 +114,4 @@ with DAG(
         },
     )
 
-    remove_files_task = BashOperator(
-        task_id="remove_files_task",
-        bash_command=f"rm {path_to_file}/{dataset_file} {path_to_file}/{parquet_file}"
-    )
-
-    download_dataset_task >> format_to_parquet_task >> local_to_gcs_task >> bigquery_table_task >> remove_files_task
+    download_dataset_task >> format_to_parquet_task >> local_to_gcs_task >> bigquery_table_task
