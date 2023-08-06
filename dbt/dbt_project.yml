@@ -38,3 +38,5 @@ models:
       materialized: table
     core:
       materialized: table
+    intermediate:
+      materialized: table
