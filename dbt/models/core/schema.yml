@@ -1,0 +1,33 @@
+
+version: 2
+
+models:
+    - name: dim_booking
+      description: >
+        
+      columns:
+          - name:
+
+    - name: dim_hosting
+      description: >
+        
+      columns:
+          - name:
+
+    - name: dim_reviews
+      description: >
+        
+      columns:
+          - name:
+
+    - name: dim_locations
+      description: >
+        
+      columns:
+          - name:
+
+    - name: dim_property
+      description: >
+        
+      columns:
+          - name:yu

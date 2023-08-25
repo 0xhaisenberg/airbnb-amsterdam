@@ -35,6 +35,6 @@ models:
   airbnb_amsterdam_june:
     # Applies to all files under models
     staging:
-      materialized: table
+      materialized: view
     core:
       materialized: table

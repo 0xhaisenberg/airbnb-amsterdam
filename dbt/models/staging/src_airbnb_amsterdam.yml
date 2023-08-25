@@ -10,3 +10,22 @@ sources:
           - name: listings
           - name: reviews
           - name: calendar
+
+models:
+    - name: stg_calendar
+      description: >
+        
+      columns:
+          - name:
+
+    - name: stg_listings
+      description: >
+        
+      columns:
+          - name:
+
+    - name: stg_reviews
+      description: >
+        
+      columns:
+          - name:
