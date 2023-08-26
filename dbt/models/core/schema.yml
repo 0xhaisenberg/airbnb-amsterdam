@@ -2,32 +2,18 @@
 version: 2
 
 models:
-    - name: dim_booking
-      description: >
-        
-      columns:
-          - name:
-
     - name: dim_hosting
       description: >
-        
-      columns:
-          - name:
+        This table contains info about hosting details
 
-    - name: dim_reviews
-      description: >
-        
-      columns:
-          - name:
-
-    - name: dim_locations
-      description: >
-        
-      columns:
-          - name:
+    - name: dim_neighbourhood
+      description: Neighbourhood data
 
     - name: dim_property
-      description: >
-        
-      columns:
-          - name:yu
+      description: Table describing the attributes of the property
+    
+    - name: base_reviews
+      description: Collation of all review elements
+
+    - name: base_bookings
+      description: Collation of all booking data
