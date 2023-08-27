@@ -16,7 +16,6 @@ list_bookings as (
 
     select
         license,
-        price,
         minimum_nights,
         maximum_nights,
         minimum_minimum_nights,
