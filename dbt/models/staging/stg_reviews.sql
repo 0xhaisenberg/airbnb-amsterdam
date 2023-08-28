@@ -11,7 +11,7 @@ entry_reviews as (
     select
         listing_id,
         id,
-        date,
+        cast(date as DATE) as date,
         reviewer_id,
         reviewer_name,
         comments

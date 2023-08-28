@@ -11,12 +11,12 @@ calendar_entry as (
 
     select
         listing_id,
-        date,
+        cast(date as DATE) as date,
         available,
         price,
         adjusted_price,
-        minimum_nights,
-        maximum_nights
+        cast(minimum_nights as INT64) as minimum_nights,
+        cast(maximum_nights as INT64) as maximum_nights
 
     from source
 
