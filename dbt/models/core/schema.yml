@@ -1,0 +1,25 @@
+
+version: 2
+
+models:
+    - name: dim_hosting
+      description: >
+        This table contains info about hosting details
+
+    - name: dim_neighbourhood
+      description: Neighbourhood data
+
+    - name: dim_property
+      description: Table describing the attributes of the property
+    
+    - name: base_reviews
+      description: Collation of all review elements
+
+    - name: base_bookings
+      description: Collation of all booking data
+
+    - name: partitioned_reviews.sql
+      description: Partitioned review table (table partioned by date)
+    
+    - name: calendar
+      description: A derived table for bookings

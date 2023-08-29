@@ -1,0 +1,19 @@
+
+version: 2
+
+sources:
+    - name: staging
+      database: airbnb-amsterdam-396218
+      schema: airbnb_amsterdam_june
+
+      tables:
+          - name: listings
+          - name: reviews
+          - name: calendar
+
+models:
+    - name: stg_calendar
+
+    - name: stg_listings
+
+    - name: stg_reviews
