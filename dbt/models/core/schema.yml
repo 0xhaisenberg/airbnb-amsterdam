@@ -20,3 +20,6 @@ models:
 
     - name: partitioned_reviews.sql
       description: Partitioned review table (table partioned by date)
+    
+    - name: calendar
+      description: A derived table for bookings
