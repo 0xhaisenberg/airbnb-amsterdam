@@ -14,6 +14,7 @@ with rev_source as (
 list_reviews as (
 
     select
+        id,
         number_of_reviews,
         number_of_reviews_ltm,
         number_of_reviews_l30d,
@@ -55,4 +56,4 @@ select
 
         from list_reviews lr 
         join rev_source rv
-        on lr.listing_id=rv.listing_id
+        on lr.id=rv.listing_id

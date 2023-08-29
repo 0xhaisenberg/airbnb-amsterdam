@@ -47,8 +47,8 @@ entry_lists as (
         cast(bathrooms as INT64) as bathrooms,
         bathrooms_text,
         cast(bedrooms as INT64) as bedrooms,
-        cast(beds as INT64), as beds
-        cast(amenities as ARRAY) as amenities,
+        cast(beds as INT64) as beds,
+        amenities,
         cast(price as FLOAT64) as price,
         minimum_nights,
         maximum_nights,

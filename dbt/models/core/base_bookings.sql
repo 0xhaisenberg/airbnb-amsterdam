@@ -15,6 +15,7 @@ with base_bookings as (
 list_bookings as (
 
     select
+        id,
         license,
         minimum_nights,
         maximum_nights,
@@ -51,9 +52,6 @@ select
         bb.minimum_nights,
         bb.maximum_nights,
         lb.license,
-        lb.price,
-        lb.minimum_nights,
-        lb.maximum_nights,
         lb.minimum_minimum_nights,
         lb.maximum_minimum_nights,
         lb.minimum_maximum_nights,

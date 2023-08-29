@@ -4,7 +4,7 @@
     partition_by={
       "field": "date",
       "data_type": "date",
-      "granularity": "day"
+      "granularity": "month"
     }
 )}}
 
