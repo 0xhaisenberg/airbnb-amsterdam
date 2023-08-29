@@ -18,7 +18,7 @@ models:
     - name: base_bookings
       description: Collation of all booking data
 
-    - name: partitioned_reviews.sql
+    - name: partitioned_reviews
       description: Partitioned review table (table partioned by date)
     
     - name: calendar
