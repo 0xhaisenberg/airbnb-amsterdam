@@ -9,11 +9,11 @@ We work towards a vision where data and information empower communities to under
 
 This project has the goal of providing clarity in the following areas:
 
-	1. Apartment availability over time.
+1. Apartment availability over time.
 	
-	2. The range of booking prices.
+2. The range of booking prices.
 	
-	3. Type of structure available for booking.
+3. Type of structure available for booking.
 
 ## Project architecture
 
