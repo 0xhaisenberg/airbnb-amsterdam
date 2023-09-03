@@ -1,5 +1,4 @@
-
-## Airbnb Data Engineering Project
+# Airbnb Data Engineering Project
 
 A batch data pipeline that extracts, transforms and loads the [Airbnb Amsterdam](http://insideairbnb.com/amsterdam) into a Data Warehouse in the [Google Cloud Platform (GCP)](https://cloud.google.com/) and models the data in [Data build tool (dbt)](https://www.getdbt.com/).
 
