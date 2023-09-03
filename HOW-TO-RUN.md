@@ -79,8 +79,7 @@ Create an environment variable called `GOOGLE_APPLICATION_CREDENTIALS` and assig
 
 The following command will create a VM using the recommended settings from above. Make sure that the region matches your choice:
 	```
-	gcloud compute instances create <name-of-the-vm> --zone=<google-cloud-zone> --image-family=ubuntu-2004-lts --image-project=ubuntu-os-cloud --machine-type=e2-standard-4 --boot-disk-size=30GB
-
+ gcloud compute instances create <name-of-the-vm> --zone=<google-cloud-zone> --image-family=ubuntu-2004-lts --image-project=ubuntu-os-cloud --machine-type=e2-standard-4 --boot-disk-size=30GB
 	```
 
 ### Set up SSH access to the VM
