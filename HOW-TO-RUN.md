@@ -1,8 +1,8 @@
 ### Prerequisites
 
 The following requirements are needed to reproduce the project:
-1. A Google Cloud Platform account.
-2. (Optional) The Google Cloud SDK. Instructions for installing it are below.
+1. A [Google Cloud Platform](https://cloud.google.com/) account.
+2. (Optional) The [Google Cloud SDK](https://cloud.google.com/sdk). Instructions for installing it are below.
 	. Most instructions below will assume that you are using the SDK for simplicity.
 3. (Optional) A SSH client.
 	. All the instructions listed below assume that you are using a Terminal and SSH.
@@ -67,7 +67,8 @@ Create an environment variable called `GOOGLE_APPLICATION_CREDENTIALS` and assig
 1. From your project's dashboard, go to Cloud Compute > VM instance
 2. Create a new instance:
 	. Any name of your choosing
-	. Pick your favourite region. You can check out the regions in this link.
+	. Pick your favourite region. You can check out the regions in [this link](https://cloud.google.com/about/locations).
+   
 	| IMPORTANT: make sure that you use the same region for all of your Google Cloud components.
 
 	. Pick a E2 series instance. A e2-standard-4 instance is recommended (4 vCPUs, 16GB RAM)
