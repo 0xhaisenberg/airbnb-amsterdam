@@ -1,14 +1,13 @@
 ### Prerequisites
 
 The following requirements are needed to reproduce the project:
-
-	1. A Google Cloud Platform account.
-	2. (Optional) The Google Cloud SDK. Instructions for installing it are below.
-		. Most instructions below will assume that you are using the SDK for simplicity.
-	3. (Optional) A SSH client.
-		. All the instructions listed below assume that you are using a Terminal and SSH.
-	4. (Optional) VSCode with the Remote-SSH extension.
-		. Any other IDE should work, but VSCode makes it very convenient to forward ports in remote VM's.
+1. A Google Cloud Platform account.
+2. (Optional) The Google Cloud SDK. Instructions for installing it are below.
+	. Most instructions below will assume that you are using the SDK for simplicity.
+3. (Optional) A SSH client.
+	. All the instructions listed below assume that you are using a Terminal and SSH.
+4. (Optional) VSCode with the Remote-SSH extension.
+	. Any other IDE should work, but VSCode makes it very convenient to forward ports in remote VM's.
 
 Development and testing were carried out using a Google Cloud Compute VM instance. I strongly recommend that a VM instance is used for reproducing the project as well. All the instructions below will assume that a VM is used.
 
